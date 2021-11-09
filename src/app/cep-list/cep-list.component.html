@@ -1,3 +1,9 @@
-<p>
-cep-list works!
-</p>
+<h2>Informações do CEP</h2>
+
+<div *ngIf="cep">
+  <h3>{{ cep.cep }}</h3>
+  <h4>{{ cep.logradouro }}</h4>
+  <h4>{{ cep.bairro }}</h4>
+  <h4>{{ cep.localidade }}</h4>
+  <h4>{{ cep.uf }}</h4>
+</div>
