@@ -1,16 +1,15 @@
-import { Component } from '@angular/core';
-
-import { ceps } from '../ceps';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cep-list',
   templateUrl: './cep-list.component.html',
-  styleUrls: ['./cep-list.component.css'],
+  styleUrls: ['./cep-list.component.css']
 })
-export class CepListComponent {
-  ceps = ceps;
+export class CepListComponent implements OnInit {
 
-  share() {
-    window.alert('The product has been shared!');
+  constructor() { }
+
+  ngOnInit() {
   }
+
 }
